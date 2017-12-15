@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{% static 'navshrink.js'%}"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Spectral+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rancho|Spectral+SC|Yanone+Kaffeesatz" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lateef" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Fondamento|Kelly+Slab|Lateef|Reem+Kufi|Rouge+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+ <!-- Loading Font Icons -->
+ <link href="{% static 'assets/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css">
+ 
+ <!-- Include all css plugins (below), or include individual files as needed -->
+ <link href="{% static 'assets/css/flickity.min.css'%}" rel="stylesheet" type="text/css">
+ <link href="{% static 'assets/css/magnific-popup.css'%}" rel="stylesheet" type="text/css">
+  <!-- Main CSS -->
+  <link href="{% static 'assets/css/dione_main.css'%}" rel="stylesheet" type="text/css">
+  <link href="{% static 'assets/css/dione_style.css'%}" rel="stylesheet" type="text/css">
+  
+  <!-- Color Skins CSS -->
+  <link href="{% static 'assets/css/dione_color_green.css'%}" rel="stylesheet" type="text/css">
+ 
+
+  <link rel="stylesheet" href="{% static 'assets/css/flipclock.css'%}">
+  
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+          <script src="{% static 'assets/js/flipclock.js'%}"></script>
+ <!-- animated bar -->
+  <link rel="stylesheet" type="text/css" href="{% static 'animate.css'%}">
+ 
+
+ 
+ <!-- animated bar end-->
+<style>
+.logo img{
+    margin-top: 60px;
+    margin-right:-100px
+  width:auto;
+  height:400px;
+}
+
+.event1  img{
+  width:425px;
+  height:550px;
+  padding:30px;
+  margin:0 auto;
+}
+h4{
+  padding:10px;
+  text-align: center;
+  font-family: Marmelad;
+  color:white;
+}
+
+.event3 img{
+  width:500px;
+  height:500px;
+  padding:30px;
+  margin:0 auto;
+}
+.event2 img{
+  width:650px;
+  height:450px;
+  padding:30px;
+  margin:0 auto;
+}
+.Aptitude img{
+  width:190px;
+  height:200px;
+  padding:20px;
+  margin:0 auto;
+}
+/* --------------------------- this is 1st edit, the GO TO TOP ------------------------------------*/
+#gototop{
+    background-color:#d6d8db;    
+  width:5%;
+  
+    position:fixed;
+    right:0px;
+    bottom:2px;
+    padding:1%;
+    opacity:.8;
+    text-align:center;
+  z-index:100;
+  overflow:hidden;
+}
+@media screen and (max-width:600 px)
+{
+  
+}
+/*------------------------------------------------------END ---------------------------------------------*/
+.gd img{
+  width:190px;
+  height:200px;
+  padding:20px;
+  margin:0 auto;
+}
+.pi img{
+  width:190px;
+  height:200px;
+  padding:20px;
+  margin:0 auto;
+}
+.spc-aim{
+  margin:50px 20px 20px 20px;
+  width:auto;
+  height:400px;
+  background-color:rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 70px;
+}
+
+
+
+.icons i{
+  color:white;
+  padding:40px;
+}
+.icons i:hover{
+  color:black;
+}
+.icons1{
+  margin-left:50px;
+}
+
+.end{
+  margin-bottom:-20px !important;
+  text-align: center;
+  color:white;
+  font-family: Yanone Kaffeesatz !important;
+  background-color: black;
+}
+.contactus h3{
+  color:black;
+  text-align:left;
+  margin-left:100px;
+  margin-top: -1px;
+  font-family: Marmelad;
+}
+.contactus h1{
+  color:black;
+  text-align:left;
+  margin-left:100px;
+  font-family: Marmelad;
+  margin-bottom:20px;
+}
+.internship-text{
+  width:auto;
+  height:600px;
+  background-color: rgba(0,0,0,0.4);
+  margin-top:130px;
+  width:auto;
+  height:500px;
+}
+.icons{
+  margin-top:120px;
+}
+.Events{
+  width:100%;
+  height:2100px;
+  margin-top:-70px;
+    
+}
+
+.add{
+  margin-top: 120px;
+}
+.contactus{
+  width:100%;
+  height:500px;
+   background-color:rgb(255,140,0);
+   background-size: cover;
+   background-position: center;
+}
+.Mission{
+  width:100%;
+  height:400px;
+  background-image:url("event.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.missionbox{
+  width:auto;
+  height:300px;
+  margin:0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:50px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.missionbox p{
+  font-size:20px;
+  color:black;
+  font-family:Fondamento;
+  padding:50px;
+  margin:0 auto;
+  margin-top: 30px;
+  
+}
+
+.logo{
+  width:auto;
+  height:500px;
+  background-image: url("event.jpeg");
+    background-position: center;
+    background-size:cover;
+}
+
+.layer{
+  background-color: rgba(255,140,0,0.3);
+  position:absolute;
+  width:100%;
+  height:500px;
+}
+.layer2{
+  background-color: rgba(255,140,0,0.3);
+  position:absolute;
+  width:100%;
+  height:400px;
+}
+
+
+
+hr{
+  width:75%;
+  color:white;
+}
+
+.my-navbar{
+  
+  border-radius:0;
+  border:0;
+  
+}
+
+li a:hover{
+  color:black;
+}
+
+.my-navbar li{
+    padding:20px;
+    position:relative;
+    top:1px;
+    
+}
+.my-navbar li:hover{
+    padding:10px;
+    background-color: white;
+    color:black!important;
+}
+.my-navbar .navbar-brand{
+  color:white;
+  font-size: 30px;
+  margin-top:10px;
+  font-family: Righteous!important;
+  height:auto;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:100%;
+  margin:auto;
+  height:640px;
+  background-color:black;
+  border:0px;
+}
+
+
+
+@media screen and (max-width:400px) {
+    .carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:auto;
+  margin:auto;
+  height:300px;
+  
+}
+    }
+    @media screen and (min-width:401px) and (max-width:575px) {
+    .carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:auto;
+  margin:auto;
+  height:340px;
+
+}
+    }
+@media screen and (min-width:576px) and (max-width:767px) {
+    .carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:auto;
+  margin:auto;
+  height:400px;
+  
+}
+    }
+
+    @media screen and (min-width:768px) and (max-width:850px) {
+    .carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:auto;
+  margin:auto;
+  height:500px;
+  
+}
+    }
+     @media screen and (min-width:851px) and (max-width:991px) {
+    .carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:auto;
+  margin:auto;
+  height:550px;
+  
+}
+    }
+      @media screen and (min-width:992px) and (max-width:1200px) {
+    .carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:auto;
+  margin:auto;
+  height:600px;
+  
+}
+    }
+@media screen and (max-width: 992px) {
+    .logo img{
+      width:0;
+      height:0;
+    }
+    .spc-aim p {
+  padding:15px;
+    font-family:Fondamento;
+    font-size: 20px;
+    color:black;
+    line-height: 150%;
+    margin-top:10px;    
+}
+.spc-aim p:hover{
+  background-color: rgba(0,0,0,0.9);
+  color:white;
+}
+
+.contactus{
+  width:100%;
+  height:auto;
+   background-color:rgb(255,140,0);
+   background-size: cover;
+   background-position: center;
+}
+.add{
+   margin-top:-50px; 
+   margin-bottom:60px;
+}
+
+.icons{
+
+  
+}
+
+}
+
+@media screen and (min-width: 70px) and (max-width: 991px) {
+  .my-navbar li{
+    padding:0px;
+    position:relative;
+    top:6px;
+    font-size: 10px!important;
+  }
+.my-navbar .navbar-brand{
+  color:white;
+  font-size: 25px;
+  margin-top:5px;
+  font-family: Righteous;
+  height:auto;
+}
+}
+
+li > a{
+  color:white; !important;
+  font-family: Marmelad;
+  font-size: 17px;
+}
+a:hover{
+  background-color: white;
+  color:black!important;
+}
+
+.spc-aim:hover{
+  background-color: rgba(0,0,0,0.9);
+  color:white;
+}
+
+.spc-aim p{
+  padding:15px;
+    font-family:Fondamento;
+    font-size: 20px;
+    color:black;
+    line-height: 200%;
+    
+}
+.spc-aim p:hover{
+  color:white;
+}
+h1{
+  text-align: center;
+}
+.event3{
+  width:500px;
+  height:500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:50px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.event1{
+  width:420px;
+  height:550px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0 auto;
+  margin-top:80px;
+
+}
+.spc-head{
+  padding:40px;
+  color:black;
+  font-size: 50px;
+  text-align: center;
+  font-family: Spectral SC;
+}
+.event-head{
+  width:100%;
+  color:black;
+  height:300px;
+  margin-top:90px;
+  font-size: 50px;
+  font-family: Spectral SC;
+}
+.event2{
+  width:650px;
+  height:720px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:80px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.Aptitude{
+  width:190px;
+  height:200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0 auto;
+  
+
+}
+
+.gd{
+  width:190px;
+  height:200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+
+
+}
+
+.pi{
+  width:190px;
+  height:200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+  
+
+}
+
+h5{
+  text-align: center;
+  padding:10px;
+  color:black;
+}
+
+
+#Mission-Button{
+     width:100%;
+     height:250px;
+     margin-top:50px;
+     font-family: Spectral SC;
+}
+
+#Mission-Button2{
+     width:100%;
+     height:200px;
+     margin-top:20px;
+     font-family: Spectral SC;
+}
+
+
+#Mission-Button3{
+     width:100%;
+     height:200px;
+     margin-top: -30px;
+     font-family: Spectral SC;
+}
+
+
+@media screen and (max-width: 575px) {
+  
+.event1  img{
+  width:250px;
+  height:350px;
+  padding:10px;
+  margin:0 auto;
+}
+.event1{
+  width:250px;
+  height:350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0 auto;
+  margin-top:80px;
+
+}
+.event2{
+  width:350px;
+  height:330px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:80px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.event2 img{
+  width:350px;
+  height:200px;
+  padding:10px;
+  margin:0 auto;
+}
+
+.event3{
+  width:250px;
+  height:250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:50px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.event3 img{
+  width:250px;
+  height:250px;
+  padding:10px;
+  margin:0 auto;
+}
+.Events{
+  width:100%;
+  height:1300px;
+  margin-top:-70px;
+    
+}
+.Aptitude img{
+  width:90px;
+  height:100px;
+  padding:10px;
+  margin:0 auto;
+}
+.Aptitude{
+  width:90px;
+  height:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0 auto;
+  
+
+}
+
+.gd{
+  width:90px;
+  height:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+
+
+}
+.gd img{
+  width:90px;
+  height:100px;
+  padding:10px;
+  margin:0 auto;
+}
+
+.pi{
+  width:90px;
+  height:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+  
+
+}
+
+.pi img{
+  width:90px;
+  height:100px;
+  padding:10px;
+  margin:0 auto;
+}
+
+.event2 h4{
+  font-size:10px;
+  margin-top: -5px;
+}
+
+}
+@media screen and (min-width:576px) and (max-width: 767px) {
+        
+.event1  img{
+  width:300px;
+  height:400px;
+  padding:15px;
+  margin:0 auto;
+}
+.event1{
+  width:300px;
+  height:400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0 auto;
+  margin-top:80px;
+
+}
+.event2{
+  width:400px;
+  height:390px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:80px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.event2 img{
+  width:400px;
+  height:250px;
+  padding:10px;
+  margin:0 auto;
+}
+
+.event3{
+  width:300px;
+  height:300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:50px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.event3 img{
+  width:300px;
+  height:300px;
+  padding:15px;
+  margin:0 auto;
+}
+.Events{
+  width:100%;
+  height:1400px;
+  margin-top:-70px;
+    
+}
+.elayer{
+  height:1400px;
+}
+.Aptitude img{
+  width:100px;
+  height:100px;
+  padding:10px;
+  margin:0 auto;
+}
+.Aptitude{
+  width:100px;
+  height:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0 auto;
+  
+
+}
+
+.gd{
+  width:100px;
+  height:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+
+
+}
+.gd img{
+  width:100px;
+  height:100px;
+  padding:10px;
+  margin:0 auto;
+}
+
+.pi{
+  width:100px;
+  height:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+  
+
+}
+
+.pi img{
+  width:100px;
+  height:100px;
+  padding:10px;
+  margin:0 auto;
+}
+
+.event2 h4{
+  font-size:12px;
+  margin-top: -5px;
+}
+}
+
+footer{
+  background-color: #222;
+  
+  
+
+}
+
+footer section{
+  color:white;
+  font-family:Fira Sans; 
+}
+
+
+#hours,#address{
+  line-height: 2;
+}
+
+#inside{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#testimonial p{
+  margin-top:15px;
+}
+
+footer #hours span:nth-child(1){
+  font-size:25px;
+}
+
+footer #address span:nth-child(1){
+  font-size:25px;
+}
+
+footer #address i{
+  color:white;
+  margin:20px 20px 20px 17px;
+}
+
+footer #address i:hover{
+  color:black;
+  
+}
+@media screen and (min-width:992px){
+footer .row{
+  margin-top:-80px;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:991px){
+  #hours,#address{
+    margin-top:-150px;
+  }
+}
+@media screen and (min-width:1px) and (max-width:767px){
+  #address{
+    text-align:center;
+    margin-top:-100px;
+  }
+
+  #hours{
+    text-align:center;
+    margin-top:-150px;
+  }
+
+  footer section hr{
+    width:50%;
+  }
+}
+
+#madeby{
+  color:white;
+  background-color: black;
+  padding:10px;
+  font-family: Fira Sans;
+}
+
+#madeby a,span{
+  color:white;
+  text-decoration:none;
+  position:relative;
+  top:3px;
+}
+
+@media screen and (max-width:991px){
+  .features-box:nth-child(3){
+    margin-top:30px;
+  }
+}
+
+@media screen and (max-width:767px){
+  .features-box:nth-child(2){
+    margin-top:30px;
+  }
+}
+
+@media screen and (max-width:594px){
+  .col-xxs-12{
+    position:relative;
+    min-height:1px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+.my-navbar .navbar-toggle:hover{
+  color:black!important;
+}
+
+}
+
+
+@media screen and (max-width:767px){
+      #venue img{
+        margin-left:130px;
+      }
+}
+</style>
+
+
+</head>
+<body>
+   
+
+        
+
+  
+</div>
+
+ <nav class="wow slideInDown my-navbar navbar navbar-inverse navbar-fixed-top" data-wow-delay="2.5s">
+  <div class="container">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" style="position:relative;top:-5px;" href="#">SPC-DTU</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a style="font-family:Arsenal; padding-top:20px;position:relative; top:5px;" href="#">Home</a></li>
+        <li><a style="font-family:Arsenal; padding-top:20px;position:relative; top:5px;" href="#event">Events</a></li>
+        <li><a style="font-family:Arsenal; padding-top:20px;position:relative; top:5px;" href="branding/">Branding</a></li>
+        <li><a style="font-family:Arsenal; padding-top:20px;position:relative; top:5px;" href="#sponsors">Sponsors</a></li>
+        <li><a style="font-family:Arsenal; padding-top:20px;position:relative; top:5px;" href="#faq">Faq</a></li>
+        <li><a style="font-family:Arsenal; padding-top:20px;position:relative; top:5px;" href="#contact">Contact Us</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Section - Home Start -->
+    <section id="home" class="topstrip display-table height-100 no-padding width-100 img-fluid "  style=" background-repeat:no-repeat; background-position: center;background-size:cover;">
+            <div class="display-table-cell vertical-align-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <h2 style="font-family:Righteous;" class="wow bounceInDown  display-block font-weight-100 letter-spacing-2 text-uppercase text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5" data-wow-delay="1s">
+                                SPC
+                                DTU
+                            </h2>
+                            
+                            <p class="wow slideInLeft letter-spacing-1 margin-3 no-margin-bottom no-margin-rl text-white xs-text-large text-extra-large text-uppercase" data-wow-delay='0.5s'>
+                                Leading DTU towards a brighter tomorrow.<br><span class="text-base-color typed-strings"></span> Enhancing the Brand DTU in the world Educational Community.
+                            </p>
+                            
+                            <a href="#target" class=" wow pulse page-scroll btn btn-base-color sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl" data-wow-delay='2s' data-wow-iteration="100000">Explore!</a>
+                        </div>
+                        <!-- //.col-md-8 -->
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //.container -->
+            </div>
+            <!-- //.display-table-cell -->    
+        </section>
+        <!-- //Section - Home End -->
+<!--
+<div class="container">
+ <div class="clock col-md-12 col-xs-12 "  style=" margin:3em; overflow:hidden; line-height:100000% "></div>
+ <div class="message"></div>
+
+ <script type="text/javascript">
+    var clock;
+    
+    $(document).ready(function() {
+        var clock;
+
+        clock = $('.clock').FlipClock({
+            clockFace: 'DailyCounter',
+            autoStart: false,
+            callbacks: {
+                stop: function() {
+                    $('.message').html('The clock has stopped!')
+                }
+            }
+        });
+                
+        clock.setTime(220880);
+        clock.setCountdown(true);
+        clock.start();
+
+    });
+</script>
+</div>
+
+<div class="container">
+  <h2>Percent Website Complete</h2>
+  <p>Keep checking the update on the percent of website complete!</p> 
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+      75%
+    </div>
+  </div>
+</div>
+-->
+ <a name="target"></a>
+    <!-- Section - About Start -->
+    <section id="about" class=" bg-warining"  style="padding-top:6%;padding-bottom:6%; " >
+        <div class="container " >
+            <div class="row no-padding-rl no-padding-top padding-8" >
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h3 class="wow slideInLeft font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium">About Placement Fest</h3>
+                    <p style="letter-spacing:1px;" class="wow slideInRight margin-3 no-margin-bottom no-margin-rl text-gray-dark-2 text-large">The Placement Fest, will introduce students to the tough challenges of placement, will entertain students and certainly guide students to a better future. The placement fest will be conducted such that it has an ever-lasting positive influence on the whole DTU Campus.</p>
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+            
+            <div class="wow slideInUp row">
+                <div class="col-md-5 xs-text-center">
+                    <p class="text-extra-large" style="font-family:Marmelad;"><b>Join us for week long Placement Fest, a journey through all the events, and best practices that will keep you looking ahead.</b></p>
+                    <p class="margin-5-5 no-margin-bottom no-margin-rl text-large text-gray-dark-2">Attend sessions and interact with other students and experts. Whether you're with us in DTU or tuning in from around the country, there's event for everyone. This year's event will be a benchmark with a lot of events, interactive experiences and the opportunity to meet one-on-one with the leaders who are shaping the future of this country.</p>
+                    <a href="#schedule" class="page-scroll btn btn-outline-black btn-medium margin-6-5 no-margin-bottom no-margin-rl" >Check Schedule</a>
+                </div>
+                <!-- //.col-md-5 -->
+                
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-sm-6 xs-margin-10 sm-margin-5 xs-no-margin-bottom sm-no-margin-bottom xs-no-margin-rl sm-no-margin-rl xs-text-center">
+                            <i class="fa fa-map-marker display-block text-base-color title-extra-large-2"></i>
+                            <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                Delhi Technological University<br>
+                                Shahbad Daulatpur, Main Bawana Road<br>
+                                Delhi, 110042,India
+                                
+                            </p>
+                        </div>
+                        <!-- //.col-md-6 -->
+                        
+                        <!-- //.col-md-6 -->
+                        
+                        <div class="col-sm-6 xs-margin-10 sm-margin-5 xs-no-margin-bottom sm-no-margin-bottom xs-no-margin-rl sm-no-margin-rl xs-text-center">
+                            <i class="fa fa-clock-o display-block text-base-color title-extra-large-2"></i>
+                            <p class="margin-3 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+                                January 22nd - 29th, 2018<br>
+                                9.15 AM - 5.30 PM
+                            </p>
+                        </div>
+                        <!-- //.col-md-6 -->
+                     
+                        <!-- //.col-md-6 -->
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //.col-md-6 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //Section - About End -->
+    
+     
+    <!-- Section - Venue Start -->
+    <section class="container-fluid bg-warning " name="intro" style="padding-top:6%;padding-bottom:6%; background-image:url('{% static 'images/event.jpeg'%}');background-position:center;background-size:cover;">
+        
+    <section id="venue" class="bg-custom height-100 no-padding width-100 img-circle" >
+          
+        <div class="display-table-cell vertical-align-middle">
+                <div class="container">
+                    <div class="row">
+                      <div class="wow slideInLeft col-sm-6">
+                        <img style="opacity:0.8;" src="{% static 'logo.png'%}">
+                      </div>
+                      
+                      <div class="col-sm-6">
+                            <div class=" wow slideInRight bg-white border-round padding-13 position-relative" style="opacity: 0.8;">
+                                <h3 class=" font-weight-700 letter-spacing-2 text-uppercase text-green xs-title-small title-medium">About SPC</h3>
+                                
+                                <p class="margin-4-5 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+The first of its kind Council in Delhi Technological University where students find a platform to test their aptitude for the corporate world by making better use of the placement opportunities.
+</p><br>
+                                                     <h3 class=" font-weight-700 letter-spacing-2 text-green text-uppercase xs-title-small title-medium">Mission</h3>
+                                
+                                <p class="margin-4-5 no-margin-bottom no-margin-rl text-large text-gray-dark-2">
+To establish an environment of professionalism which shall serve the university and the nation in the world educational community.
+</p>
+                            </div>
+                            <!-- //.bg-white -->
+                        </div>
+                      
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //.container -->
+            </div>
+            <!-- //.display-table-cell -->
+        </section>
+        </section>
+          <!-- //Section - Venue End -->
+
+          
+    <!-- Section - Speakers Start -->
+    <section id="event" class="bg-warning">
+            <div class="container">
+                <div class="row no-padding-rl no-padding-top padding-8" >
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h3 class="wow slideInLeft font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium">Events Planned</h3>
+                        <p style="letter-spacing:1px;" class="wow slideInRight margin-3 no-margin-bottom no-margin-rl text-gray-dark-2 text-large">Know about the Events. SPC DTU will conduct following events during and before the placement fest. Every event is carefully planned to give students exactly the right knowledge of a perticular skill, be it an entertainment event or the Lime Light Events.</p>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <div class="row">
+                    <!-- Features Box Style v2 Start -->
+                    <div class="features-box col-xs-12 col-sm-6 col-md-4">
+                        <div class="overflow-hidden position-relative width-100" >
+                            <div class="wow slideInLeft position-relative">
+                                <img src="{% static 'assets/images/inaug.png'%}" alt=""/>
+                       
+                            </div>
+                            <!-- //.position-relative -->
+                            
+                            <div class="wow slideInRight bg-gray-light no-padding-rl padding-6 position-relative text-center">
+                                <span class="display-block font-family-alt font-weight-700 letter-spacing-2 text-gray-dark-2 text-small text-uppercase">Inaugeration Event</span>
+                            </div>
+                            <!-- //.bg-gray-light -->
+                            
+                            <div class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100">
+                                <div class="bg-base-color height-100 width-100">
+                                    <div class="display-table height-100 width-100">
+                                        <div class="display-table-cell no-padding-tb padding-11 vertical-align-middle">
+                                            <span class="display-block font-family-alt letter-spacing-2 text-medium text-uppercase text-white">Inauguration Event</span>
+                                            <span class="display-block font-family-alt letter-spacing-1 text-small text-uppercase text-white">Marks the start of fest!</span>
+                                            <p class="margin-6 no-margin-bottom no-margin-rl text-medium text-white">Inauguration Ceremony  
+                                                    by a very renowned personality. The event will host a gathering of 400+ students and mark the start of the fest.
+                                                    </p>
+                                        </div>
+                                        <!-- //.display-table-cell -->
+                                    </div>
+                                    <!-- //.display-table -->
+                                </div>
+                                <!-- //.bg-base-color -->
+                            </div>
+                            <!-- //.ease -->
+                        </div>
+                        <!-- //.overflow-hidden -->
+                    </div>
+                    <!-- //Features Box Style v2 End -->
+                    
+                    <!-- Features Box Style v2 Start -->
+                    <div class="features-box col-xs-12 col-sm-6 col-md-4" style="margin-left:auto;margin-right:auto;">
+                        <div class="overflow-hidden position-relative width-100">
+                            <div class="wow slideInLeft position-relative">
+                                <img src="{% static 'assets/images/mock.jpg'%}" alt=""/>
+                          
+                            </div>
+                            <!-- //.position-relative -->
+                            
+                            <div class="wow slideInRight bg-gray-light no-padding-rl padding-6 position-relative text-center">
+                                <span class="display-block font-family-alt font-weight-700 letter-spacing-2 text-gray-dark-2 text-small text-uppercase">Mock Placement Event</span>
+                            </div>
+                            <!-- //.bg-gray-light -->
+                            
+                            <div class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100">
+                                <div class="bg-base-color height-100 width-100">
+                                    <div class="display-table height-100 width-100">
+                                        <div class="display-table-cell no-padding-tb padding-11 vertical-align-middle">
+                                            <span class="display-block font-family-alt letter-spacing-2 text-medium text-uppercase text-white">Mock Placements</span>
+                                            <span class="display-block font-family-alt letter-spacing-1 text-small text-uppercase text-white">Aptitude Test, GDs and Personal Interviews</span>
+                                            <p class="margin-6 no-margin-bottom no-margin-rl text-medium text-white">Mock Placement Events
+                                                    By renowned company professionals will be the highlight of the whole fest.
+                                                    </p>
+                                        </div>
+                                        <!-- //.display-table-cell -->
+                                    </div>
+                                    <!-- //.display-table -->
+                                </div>
+                                <!-- //.bg-base-color -->
+                            </div>
+                            <!-- //.ease -->
+                        </div>
+                        <!-- //.overflow-hidden -->
+                    </div>
+                    <!-- //Features Box Style v2 End -->
+                    
+                    <!-- Features Box Style v2 Start -->
+                    <div class="features-box col-xs-12 col-sm-6 col-md-4" style="margin-left:auto;margin-right:auto;">
+                        <div class="overflow-hidden position-relative width-100">
+                            <div class="wow slideInLeft position-relative">
+                                <img src="{% static 'assets/images/concert.jpg'%}" alt=""/>
+                                
+                            </div>
+                            <!-- //.position-relative -->
+                            
+                            <div class="wow slideInRight bg-gray-light no-padding-rl padding-6 position-relative text-center">
+                                <span class="display-block font-family-alt font-weight-700 letter-spacing-2 text-gray-dark-2 text-small text-uppercase">Star Night</span>
+                            </div>
+                            <!-- //.bg-gray-light -->
+                            
+                            <div class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100">
+                                <div class="bg-base-color height-100 width-100">
+                                    <div class="display-table height-100 width-100">
+                                        <div class="display-table-cell no-padding-tb padding-11 vertical-align-middle">
+                                            <span class="display-block font-family-alt letter-spacing-2 text-medium text-uppercase text-white">Star Night</span>
+                                            <span class="display-block font-family-alt letter-spacing-1 text-small text-uppercase text-white">Celebrity appearance, Entertainment</span>
+                                            <p class="margin-6 no-margin-bottom no-margin-rl text-medium text-white">Star Night: 
+                                                    The fest will finally close its doors with a star night where popular celebrity will be called for entertainment event like concert or dance performance!
+                                                    </p>
+                                        </div>
+                                        <!-- //.display-table-cell -->
+                                    </div>
+                                    <!-- //.display-table -->
+                                </div>
+                                <!-- //.bg-base-color -->
+                            </div>
+                            <!-- //.ease -->
+                        </div>
+                        <!-- //.overflow-hidden -->
+                    </div>
+                    <!-- //Features Box Style v2 End -->
+                    
+                    <!-- Features Box Style v2 Start -->
+                    <div class="features-box col-xs-12 col-sm-6 col-md-4" style="margin-left:auto;margin-right:auto;margin-top:30px;">
+                        <div class="overflow-hidden position-relative width-100">
+                            <div class="wow slideInRight position-relative">
+                                <img src="{% static 'assets/images/dance.jpg'%}" alt=""/>
+                                
+                            </div>
+                            <!-- //.position-relative -->
+                            
+                            <div class="wow slideInLeft bg-gray-light no-padding-rl padding-6 position-relative text-center">
+                                <span class="display-block font-family-alt font-weight-700 letter-spacing-2 text-gray-dark-2 text-small text-uppercase">Bollywood Dance Competition</span>
+                            </div>
+                            <!-- //.bg-gray-light -->
+                            
+                            <div class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100">
+                                <div class="bg-base-color height-100 width-100">
+                                    <div class="display-table height-100 width-100">
+                                        <div class="display-table-cell no-padding-tb padding-11 vertical-align-middle">
+                                            <span class="display-block font-family-alt letter-spacing-2 text-medium text-uppercase text-white">Bollywood Dance Competition</span>
+                                            <span class="display-block font-family-alt letter-spacing-1 text-small text-uppercase text-white">Bollywood, Entertainment</span>
+                                            <p class="margin-6 no-margin-bottom no-margin-rl text-medium text-white">This will also be the highlight of the fest since renowned professionals from bollywood would judge the dance competition and thus provide one lucky winner her/ his first break in bollywood!</p>
+                                        </div>
+                                        <!-- //.display-table-cell -->
+                                    </div>
+                                    <!-- //.display-table -->
+                                </div>
+                                <!-- //.bg-base-color -->
+                            </div>
+                            <!-- //.ease -->
+                        </div>
+                        <!-- //.overflow-hidden -->
+                    </div>
+                    <!-- //Features Box Style v2 End -->
+                    
+                    <!-- Features Box Style v2 Start -->
+                    <div class="features-box col-xs-12 col-sm-6 col-md-4" style="margin-left:auto;margin-right:auto;margin-top:30px;">
+                        <div class="overflow-hidden position-relative width-100">
+                            <div class="wow slideInRight position-relative">
+                                <img src="{% static 'assets/images/fun.jpg'%}" alt=""/>
+                                
+                            </div>
+                            <!-- //.position-relative -->
+                            
+                            <div class="wow slideInLeft bg-gray-light no-padding-rl padding-6 position-relative text-center">
+                                <span class="display-block font-family-alt font-weight-700 letter-spacing-2 text-gray-dark-2 text-small text-uppercase">Fun Events</span>
+                            </div>
+                            <!-- //.bg-gray-light -->
+                            
+                            <div class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100">
+                                <div class="bg-base-color height-100 width-100">
+                                    <div class="display-table height-100 width-100">
+                                        <div class="display-table-cell no-padding-tb padding-11 vertical-align-middle">
+                                            <span class="display-block font-family-alt letter-spacing-2 text-medium text-uppercase text-white">Fun Events</span>
+                                            <span class="display-block font-family-alt letter-spacing-1 text-small text-uppercase text-white">Entertainment, Recreation</span>
+                                            <p class="margin-6 no-margin-bottom no-margin-rl text-medium text-white">A lot of small entertainment events will keep the fest going and create the atmosphere of playfulness around the campus. These events will be crucial for getting crowd attraction towards the fest and its events.</p>
+                                        </div>
+                                        <!-- //.display-table-cell -->
+                                    </div>
+                                    <!-- //.display-table -->
+                                </div>
+                                <!-- //.bg-base-color -->
+                            </div>
+                            <!-- //.ease -->
+                        </div>
+                        <!-- //.overflow-hidden -->
+                    </div>
+                    <!-- //Features Box Style v2 End -->
+                    
+                    <!-- Features Box Style v2 Start -->
+                    <div class="features-box col-xs-12 col-sm-6 col-md-4" style="margin-left:auto;margin-right:auto;margin-top:30px;">
+                        <div class="overflow-hidden position-relative width-100">
+                            <div class="wow slideInRight position-relative">
+                                <img src="{% static 'assets/images/sex-ed.jpg'%}" alt=""/>
+                                
+                            </div>
+                            <!-- //.position-relative -->
+                            
+                            <div class="wow slideInLeft bg-gray-light no-padding-rl padding-6 position-relative text-center">
+                                <span class="display-block font-family-alt font-weight-700 letter-spacing-2 text-gray-dark-2 text-small text-uppercase">Social event</span>
+                            </div>
+                            <!-- //.bg-gray-light -->
+                            
+                            <div class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100">
+                                <div class="bg-base-color height-100 width-100">
+                                    <div class="display-table height-100 width-100">
+                                        <div class="display-table-cell no-padding-tb padding-11 vertical-align-middle">
+                                            <span class="display-block font-family-alt letter-spacing-2 text-medium text-uppercase text-white">Social Event</span>
+                                            <span class="display-block font-family-alt letter-spacing-1 text-small text-uppercase text-white">Society, Social-Cause</span>
+                                            <p class="margin-6 no-margin-bottom no-margin-rl text-medium text-white">Social Event: 
+                                                    A famous bollywood star will take up the Sex Education Campaign in DTU, which will cover 5000+ students and have an enormous media coverage.
+                                                    </p>
+                                        </div>
+                                        <!-- //.display-table-cell -->
+                                    </div>
+                                    <!-- //.display-table -->
+                                </div>
+                                <!-- //.bg-base-color -->
+                            </div>
+                            <!-- //.ease -->
+                        </div>
+                        <!-- //.overflow-hidden -->
+                    </div>
+                    <!-- //Features Box Style v2 End -->
+                    
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.container -->
+        </section>
+        <!-- //Section - Speakers End -->
+        
+        
+
+           <!-- Section - Sponsors Start -->
+    <section id="sponsors" class="wow slideInLeft bg-sponsor img-fluid">
+            <div class="container">
+                <div class="row no-padding-rl no-padding-top padding-8">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h3 class="font-family-alt letter-spacing-2 text-uppercase xs-title-small title-medium " style="color:antiquewhite">Sponsors</h3>
+                        <p style="letter-spacing:1px;color:white;" class="margin-3 no-margin-bottom no-margin-rl  text-large" style="color:antiquewhite">SPC DTU wouldn't be possible without our amazing sponsors. They<br> have a major part in organizing the fest, providing us with much needed capital and other material!</p>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="row">
+                            <div class="wow slideInLeft col-xxs-12 col-xs-6 col-sm-4 text-center">
+                                <img style="width:200px;height:150px;margin:40px;" src="{% static 'assets/images/sponsor-1.png'%}" alt=""/>
+                            </div>
+                            <!-- //.col-xs-6 -->
+                            
+                            <div class="wow slideInLeft col-xxs-12 col-xs-6 col-sm-4 text-center">
+                                <img style="width:200px;height:150px;margin:40px;" src="{% static 'assets/images/sponsor-2.png'%}" alt=""/>
+                            </div>
+                            <!-- //.col-xs-6 -->
+                            
+                            <div class="wow slideInRight col-xxs-12 col-xs-6 col-sm-4 text-center">
+                                <img style="width:200px;height:150px;margin:40px;" src="{% static 'assets/images/sponsor-3.png'%}" alt=""/>
+                            </div>
+                            <!-- //.col-xs-6 -->
+                            
+                            <div class="wow slideInLeft col-xxs-12 col-xs-6 col-sm-4 text-center">
+                                <img style="width:200px;height:150px;margin:40px;" src="{% static 'assets/images/sponsor-4.png'%}" alt=""/>
+                            </div>
+                            <!-- //.col-xs-6 -->
+                            
+                            <div class="wow slideInLeft col-xxs-12 col-xs-6 col-sm-4 text-center">
+                                <img style="width:200px;height:150px;margin:40px;" src="{% static 'assets/images/sponsor-5.png'%}" alt=""/>
+                            </div>
+                            <!-- //.col-xs-6 -->
+                            
+                            <div class="wow slideInRight col-xxs-12 col-xs-6 col-sm-4 text-center">
+                                <img style="width:200px;height:150px;margin:40px;" src="{% static 'assets/images/sponsor-6.png'%}" alt=""/>
+                            </div>
+                            <!-- //.col-xs-6 -->
+                        </div>
+                        <!-- //.row -->
+                    </div>
+                    <!-- //.col-md-10 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.container -->
+        </section>
+        <!-- //Section - Sponsors End -->
+        
+
+<!-- Section - FAQ Start -->
+<section id="faq" class="bg-warning padding-1percent" style="margin-bottom:0px;font-family:Marmelad;"  >
+    <div class="container">
+        <div class="row no-padding-rl no-padding-top padding-8 ">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h3 class="wow slideInLeft font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium">FAQ</h3>
+                <p class="wow slideInRight font-family-alt margin-3 no-margin-bottom no-margin-rl text-gray-dark-2 text-large">Here is a list of answers to frequently asked questions about Student Placement Council.<br>These questions will try to solve all possible doubts about the Placement Fest in your mind!</p>
+            </div>
+            <!-- //.col-md-8 -->
+        </div>
+        <!-- //.row -->
+        
+        <div class="row" >
+            <div class="wow slideInLeft col-sm-4 margin-5 no-margin-rl no-margin-top">
+                <ul class="nav nav-pills nav-stacked  display-block letter-spacing-2 margin-3 sm-no-margin no-margin-left no-margin-tb text-small " role="tablist">
+                    <li role="presentation" class="active no-margin">
+                        <a href="#tab-one" aria-controls="tab-one" role="tab" data-toggle="tab" class="border border-gray-light no-border-bottom no-border-radius bg-danger" aria-expanded="false">01. General FAQ</a>
+                    </li>
+                    <li role="presentation" class="no-margin">
+                        <a href="#tab-two" aria-controls="tab-two" role="tab" data-toggle="tab" class="border border-gray-light no-border-radius bg-danger" aria-expanded="false"  >02. About SPC</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //.col-sm-4 -->
+            
+            <div class="wow slideInRight col-sm-8">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="tab-one">
+                        <!-- Accordion Start -->
+                        <div class="panel-group position-relative" id="accordion-one" role="tablist">
+                            <div class="panel active" role="tab" id="accordion-one-heading-1">
+                                <div class="panel-heading ease">
+                                    <div class="panel-title display-block">
+                                        <a class="font-family-alt font-weight-700 letter-spacing-2 text-small text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-collapse-1" aria-controls="accordion-one-collapse-1">Will the students be able to get actual placements?</a>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="accordion-one-collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="accordion-one-heading-1">
+                                    <div class="panel-body">
+                                        <p class="text-gray-dark-2 text-large">No, The purpose of the fest is to provide corporate exposure to students.</p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+
+                            <div class="panel" role="tab" id="accordion-one-heading-2">
+                                <div class="panel-heading ease">
+                                    <div class="panel-title display-block">
+                                        <a class="collapsed font-family-alt font-weight-700 letter-spacing-2 text-small text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-collapse-2" aria-controls="accordion-one-collapse-2">Can I attend all the rounds of Mock Placements</a>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="accordion-one-collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="accordion-one-heading-2">
+                                    <div class="panel-body">
+                                        <p class="text-gray-dark-2 text-large">Yes, you need to be a college student and have a valid ID card of college to register. Then accordingly tests will be taken to see which company did you get!</p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+
+                            <div class="panel" role="tab" id="accordion-one-heading-3">
+                                <div class="panel-heading ease">
+                                    <div class="panel-title display-block">
+                                        <a class="collapsed font-family-alt font-weight-700 letter-spacing-2 text-small text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-collapse-3" aria-controls="accordion-one-collapse-3">Will I recieve a certificate of participation?</a>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="accordion-one-collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="accordion-one-heading-3">
+                                    <div class="panel-body">
+                                        <p class="text-gray-dark-2 text-large">Yes.</p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                            
+                            <div class="panel" role="tab" id="accordion-one-heading-4">
+                                <div class="panel-heading ease">
+                                    <div class="panel-title display-block">
+                                        <a class="collapsed font-family-alt font-weight-700 letter-spacing-2 text-small text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-collapse-4" aria-controls="accordion-one-collapse-4">What other events other than placement events will be conducted?</a>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="accordion-one-collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="accordion-one-heading-4">
+                                    <div class="panel-body">
+                                        <p class="text-gray-dark-2 text-large">Apart from placements, we will conduct entertainment events, star night, bollywood dance competition. We are planning to have a big social event as well. </p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                            
+                            <div class="panel" role="tab" id="accordion-one-heading-5">
+                                <div class="panel-heading ease">
+                                    <div class="panel-title display-block">
+                                        <a class="collapsed font-family-alt font-weight-700 letter-spacing-2 text-small text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion-one" href="#accordion-one-collapse-5" aria-controls="accordion-one-collapse-5">How do you select team members for the placement fest?</a>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="accordion-one-collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="accordion-one-heading-5">
+                                    <div class="panel-body">
+                                        <p class="text-gray-dark-2 text-large">Good Question! Any one who is dedicated and wants to help develope DTU is welcome to the team. See contact us and drop a mail to us! Cheers</p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //Accordion End -->
+                    </div>
+                    <!-- //.tab-pane -->
+                    
+                    <div role="tabpanel" class="tab-pane fade" id="tab-two">
+                        <!-- Accordion Start -->
+                        <div class="panel-group position-relative" id="accordion-two" role="tablist">
+                            <div class="panel active" role="tab" id="accordion-two-heading-1">
+                                <div class="panel-heading ease">
+                                    <div class="panel-title display-block">
+                                        <a class="font-family-alt font-weight-700 letter-spacing-2 text-small text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion-two" href="#accordion-two-collapse-1" aria-controls="accordion-two-collapse-1">Are there passes needed for the event?</a>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="accordion-two-collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="accordion-two-heading-1">
+                                    <div class="panel-body">
+                                        <p class="text-gray-dark-2 text-large">Yes! The passes will be provided at various places before the fest! Evrything is carefully thought of!</p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+
+                            <div class="panel" role="tab" id="accordion-two-heading-2">
+                                <div class="panel-heading ease">
+                                    <div class="panel-title display-block">
+                                        <a class="collapsed font-family-alt font-weight-700 letter-spacing-2 text-small text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion-two" href="#accordion-two-collapse-2" aria-controls="accordion-two-collapse-2">Can I register online?</a>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="accordion-two-collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="accordion-two-heading-2">
+                                    <div class="panel-body">
+                                        <p class="text-gray-dark-2 text-large">Yes.</p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                            
+                            <div class="panel" role="tab" id="accordion-two-heading-3">
+                                <div class="panel-heading ease">
+                                    <div class="panel-title display-block">
+                                        <a class="collapsed font-family-alt font-weight-700 letter-spacing-2 text-small text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion-two" href="#accordion-two-collapse-3" aria-controls="accordion-two-collapse-3">What all companies will come at the fest?</a>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="accordion-two-collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="accordion-two-heading-3">
+                                    <div class="panel-body">
+                                        <p class="text-gray-dark-2 text-large">See the fb page(see contact us) for the list of companies!</p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                            
+                            <div class="panel" role="tab" id="accordion-two-heading-4">
+                                <div class="panel-heading ease">
+                                    <div class="panel-title display-block">
+                                        <a class="collapsed font-family-alt font-weight-700 letter-spacing-2 text-small text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion-two" href="#accordion-two-collapse-4" aria-controls="accordion-two-collapse-4">Are all the events will be paid?</a>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="accordion-two-collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="accordion-two-heading-4">
+                                    <div class="panel-body">
+                                        <p class="text-gray-dark-2 text-large">No, Some of them will be paid, to encourage serious participations, although entertainment events are likely to be free!</p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //Accordion End -->
+                    </div>
+                    <!-- //.tab-pane -->
+                </div>
+                <!-- //.tab-content -->
+            </div>
+            <!-- //.col-sm-8 -->
+        </div>
+        <!-- //.row -->
+        
+        <!-- //.row -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //Section - FAQ End -->
+
+<footer class="wow slideInUp footer" id="contact" style=" padding:1%; margin:0px; ">
+      <div class="container"  >
+        <div class="row" >
+          <section id="map" class="wow slideInLeft col-md-4 col-sm-12 remove-padding" data-wow-delay=".5s" >
+             <a href="https://www.google.com/maps/place/delhi/@30.6444563,104.0438002,17z/data=!4m5!3m4!1s0x0:0xfd72d126a06e0a88!8m2!3d30.643939!4d104.045346?hl=en-US" target="_blank">
+            <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.977963752883!2d77.11547651508528!3d28.750074882371564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01212a67c965%3A0x87d470ca1c30d1b0!2sDelhi+Technological+University!5e0!3m2!1sen!2sin!4v1513169578892" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div></a>
+          
+
+
+
+          
+          </section>
+           <div class="col-sm-1 col-md-1">
+           </div>
+           <section id="address" class="wow slideInDown col-md-3 col-sm-5 remove-padding" data-wow-delay=".5s" >
+            <div id="inside">
+            <span>Connect With Us</span><br>
+            <span><a href =""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                 <a href =""><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+                 <a href =""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></span><br>
+               </div>
+            <hr class="visible-xs">
+          </section>
+          <div class=" col-sm-1 col-md-1" style="padding:3%">
+           </div>
+          <section id="hours" class="wow slideInRight col-md-3 col-sm-5 remove-padding" data-wow-delay=".5s">
+            <div id="inside">
+            <span>Reach Us At</span><br>
+            <span>Delhi Technological University,</span><br>
+                        <span>Shahbad Daulatpur,</span><br>
+                        <span>Main Bawana Road,</span><br>
+                        <span>Delhi,110042</span><br>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i> spcdtuhr@gmail.com</span><br>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i> 8448343696</span>
+                      </div>
+                        <hr class="visible-xs">
+          </section>
+         
+          
+        </div>
+      </div>
+      <div class="text-center" style="color:white;font-family:Fira Sans;"">&copy; All Rights Reserved</div>
+    </footer>
+
+    <div id="madeby" class="text-center">
+      Designed & Developed by- <br> <a style="margin-left:5px" href="https://www.facebook.com/abhinav.rastogi.758"> Abhinav Rastogi |</a>  <a href="https://www.facebook.com/profile.php?id=100012863267146"> Ashish Gupta</a>
+    </div>
+
+
+   <script type="text/javascript">
+     var imagebackground = 0;
+    var imgbackgrounds = [];
+    imgbackgrounds[0] ='{% static 'dtu.jpeg'%}';
+    imgbackgrounds[1] ='{% static 'event.jpeg'%}';
+      imgbackgrounds[2] ='{% static 'img2.jpeg'%}';
+       
+    
+
+
+    function changeimage() {
+        imagebackground++;
+        if(imagebackground > 2) imagebackground = 0;
+
+        $('#home').fadeToggle("slow",function() {
+            $('#home').css({
+                'background-image' : "url('" + imgbackgrounds[imagebackground] + "')"
+            });
+            
+        });  
+
+
+        setTimeout(changeimage, 8000);
+    }  
+
+    $(document).ready(function() {
+        setTimeout(changeimage, 10);        
+    });  
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+</body>
+</html>

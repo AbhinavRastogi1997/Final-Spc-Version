@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{% static 'navshrink.js'%}"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Spectral+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rancho|Spectral+SC|Yanone+Kaffeesatz" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lateef" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Fondamento|Kelly+Slab|Lateef|Reem+Kufi|Rouge+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+ <!-- Loading Font Icons -->
+ <link href="{% static 'assets/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css">
+
+ <!-- Include all css plugins (below), or include individual files as needed -->
+ <link href="{% static 'assets/css/flickity.min.css'%}" rel="stylesheet" type="text/css">
+ <link href="{% static 'assets/css/magnific-popup.css'%}" rel="stylesheet" type="text/css">
+  <!-- Main CSS -->
+  <link href="{% static 'assets/css/dione_main.css'%}" rel="stylesheet" type="text/css">
+  <link href="{% static 'assets/css/dione_style.css'%}" rel="stylesheet" type="text/css">
+
+  <!-- Color Skins CSS -->
+  <link href="{% static 'assets/css/dione_color_green.css'%}" rel="stylesheet" type="text/css">
+
+
+  <link rel="stylesheet" href="{% static 'assets/css/flipclock.css'%}">
+
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+          <script src="{% static 'assets/js/flipclock.js'%}"></script>
+ <!-- animated bar -->
+  <link rel="stylesheet" type="text/css" href="{% static 'animate.css'%}">
+
+
+
+ <!-- animated bar end-->
+<style>
+.logo img{
+    margin-top: 60px;
+    margin-right:-100px
+  width:auto;
+  height:400px;
+}
+
+.event1  img{
+  width:425px;
+  height:550px;
+  padding:30px;
+  margin:0 auto;
+}
+h4{
+  padding:10px;
+  text-align: center;
+  font-family: Marmelad;
+  color:white;
+}
+
+.event3 img{
+  width:500px;
+  height:500px;
+  padding:30px;
+  margin:0 auto;
+}
+.event2 img{
+  width:650px;
+  height:450px;
+  padding:30px;
+  margin:0 auto;
+}
+.Aptitude img{
+  width:190px;
+  height:200px;
+  padding:20px;
+  margin:0 auto;
+}
+/* --------------------------- this is 1st edit, the GO TO TOP ------------------------------------*/
+#gototop{
+    background-color:#d6d8db;
+  width:5%;
+
+    position:fixed;
+    right:0px;
+    bottom:2px;
+    padding:1%;
+    opacity:.8;
+    text-align:center;
+  z-index:100;
+  overflow:hidden;
+}
+@media screen and (max-width:600 px)
+{
+
+}
+/*------------------------------------------------------END ---------------------------------------------*/
+.gd img{
+  width:190px;
+  height:200px;
+  padding:20px;
+  margin:0 auto;
+}
+.pi img{
+  width:190px;
+  height:200px;
+  padding:20px;
+  margin:0 auto;
+}
+.spc-aim{
+  margin:50px 20px 20px 20px;
+  width:auto;
+  height:400px;
+  background-color:rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 70px;
+}
+
+
+
+.icons i{
+  color:white;
+  padding:40px;
+}
+.icons i:hover{
+  color:black;
+}
+.icons1{
+  margin-left:50px;
+}
+
+.end{
+  margin-bottom:-20px !important;
+  text-align: center;
+  color:white;
+  font-family: Yanone Kaffeesatz !important;
+  background-color: black;
+}
+.contactus h3{
+  color:black;
+  text-align:left;
+  margin-left:100px;
+  margin-top: -1px;
+  font-family: Marmelad;
+}
+.contactus h1{
+  color:black;
+  text-align:left;
+  margin-left:100px;
+  font-family: Marmelad;
+  margin-bottom:20px;
+}
+.internship-text{
+  width:auto;
+  height:600px;
+  background-color: rgba(0,0,0,0.4);
+  margin-top:130px;
+  width:auto;
+  height:500px;
+}
+.icons{
+  margin-top:120px;
+}
+.Events{
+  width:100%;
+  height:2100px;
+  margin-top:-70px;
+
+}
+
+.add{
+  margin-top: 120px;
+}
+.contactus{
+  width:100%;
+  height:500px;
+   background-color:rgb(255,140,0);
+   background-size: cover;
+   background-position: center;
+}
+.Mission{
+  width:100%;
+  height:400px;
+  background-image:url("event.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.missionbox{
+  width:auto;
+  height:300px;
+  margin:0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:50px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.missionbox p{
+  font-size:20px;
+  color:black;
+  font-family:Fondamento;
+  padding:50px;
+  margin:0 auto;
+  margin-top: 30px;
+
+}
+
+.logo{
+  width:auto;
+  height:500px;
+  background-image: url("event.jpeg");
+    background-position: center;
+    background-size:cover;
+}
+
+.layer{
+  background-color: rgba(255,140,0,0.3);
+  position:absolute;
+  width:100%;
+  height:500px;
+}
+.layer2{
+  background-color: rgba(255,140,0,0.3);
+  position:absolute;
+  width:100%;
+  height:400px;
+}
+
+
+
+hr{
+  width:75%;
+  color:white;
+}
+
+.my-navbar{
+
+  border-radius:0;
+  border:0;
+
+}
+
+li a:hover{
+  color:black;
+}
+
+.my-navbar li{
+    padding:20px;
+    position:relative;
+    top:1px;
+
+}
+.my-navbar li:hover{
+    padding:10px;
+    background-color: white;
+    color:black!important;
+}
+.my-navbar .navbar-brand{
+  color:white;
+  font-size: 30px;
+  margin-top:10px;
+  font-family: Righteous!important;
+  height:auto;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:100%;
+  margin:auto;
+  height:640px;
+  background-color:black;
+  border:0px;
+}
+
+
+
+@media screen and (max-width:400px) {
+    .carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:auto;
+  margin:auto;
+  height:300px;
+
+}
+    }
+    @media screen and (min-width:401px) and (max-width:575px) {
+    .carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:auto;
+  margin:auto;
+  height:340px;
+
+}
+    }
+@media screen and (min-width:576px) and (max-width:767px) {
+    .carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:auto;
+  margin:auto;
+  height:400px;
+
+}
+    }
+
+    @media screen and (min-width:768px) and (max-width:850px) {
+    .carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:auto;
+  margin:auto;
+  height:500px;
+
+}
+    }
+     @media screen and (min-width:851px) and (max-width:991px) {
+    .carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:auto;
+  margin:auto;
+  height:550px;
+
+}
+    }
+      @media screen and (min-width:992px) and (max-width:1200px) {
+    .carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width:auto;
+  margin:auto;
+  height:600px;
+
+}
+    }
+@media screen and (max-width: 992px) {
+    .logo img{
+      width:0;
+      height:0;
+    }
+    .spc-aim p {
+  padding:15px;
+    font-family:Fondamento;
+    font-size: 20px;
+    color:black;
+    line-height: 150%;
+    margin-top:10px;
+}
+.spc-aim p:hover{
+  background-color: rgba(0,0,0,0.9);
+  color:white;
+}
+
+.contactus{
+  width:100%;
+  height:auto;
+   background-color:rgb(255,140,0);
+   background-size: cover;
+   background-position: center;
+}
+.add{
+   margin-top:-50px;
+   margin-bottom:60px;
+}
+
+.icons{
+
+
+}
+
+}
+
+@media screen and (min-width: 70px) and (max-width: 991px) {
+  .my-navbar li{
+    padding:0px;
+    position:relative;
+    top:6px;
+    font-size: 10px!important;
+  }
+.my-navbar .navbar-brand{
+  color:white;
+  font-size: 25px;
+  margin-top:5px;
+  font-family: Righteous;
+  height:auto;
+}
+}
+
+li > a{
+  color:white; !important;
+  font-family: Marmelad;
+  font-size: 17px;
+}
+a:hover{
+  background-color: white;
+  color:black!important;
+}
+
+.spc-aim:hover{
+  background-color: rgba(0,0,0,0.9);
+  color:white;
+}
+
+.spc-aim p{
+  padding:15px;
+    font-family:Fondamento;
+    font-size: 20px;
+    color:black;
+    line-height: 200%;
+
+}
+.spc-aim p:hover{
+  color:white;
+}
+h1{
+  text-align: center;
+}
+.event3{
+  width:500px;
+  height:500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:50px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.event1{
+  width:420px;
+  height:550px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0 auto;
+  margin-top:80px;
+
+}
+.spc-head{
+  padding:40px;
+  color:black;
+  font-size: 50px;
+  text-align: center;
+  font-family: Spectral SC;
+}
+.event-head{
+  width:100%;
+  color:black;
+  height:300px;
+  margin-top:90px;
+  font-size: 50px;
+  font-family: Spectral SC;
+}
+.event2{
+  width:650px;
+  height:720px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:80px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.Aptitude{
+  width:190px;
+  height:200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0 auto;
+
+
+}
+
+.gd{
+  width:190px;
+  height:200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+
+
+}
+
+.pi{
+  width:190px;
+  height:200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+
+
+}
+
+h5{
+  text-align: center;
+  padding:10px;
+  color:black;
+}
+
+
+#Mission-Button{
+     width:100%;
+     height:250px;
+     margin-top:50px;
+     font-family: Spectral SC;
+}
+
+#Mission-Button2{
+     width:100%;
+     height:200px;
+     margin-top:20px;
+     font-family: Spectral SC;
+}
+
+
+#Mission-Button3{
+     width:100%;
+     height:200px;
+     margin-top: -30px;
+     font-family: Spectral SC;
+}
+
+
+@media screen and (max-width: 575px) {
+
+.event1  img{
+  width:250px;
+  height:350px;
+  padding:10px;
+  margin:0 auto;
+}
+.event1{
+  width:250px;
+  height:350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0 auto;
+  margin-top:80px;
+
+}
+.event2{
+  width:350px;
+  height:330px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:80px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.event2 img{
+  width:350px;
+  height:200px;
+  padding:10px;
+  margin:0 auto;
+}
+
+.event3{
+  width:250px;
+  height:250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:50px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.event3 img{
+  width:250px;
+  height:250px;
+  padding:10px;
+  margin:0 auto;
+}
+.Events{
+  width:100%;
+  height:1300px;
+  margin-top:-70px;
+
+}
+.Aptitude img{
+  width:90px;
+  height:100px;
+  padding:10px;
+  margin:0 auto;
+}
+.Aptitude{
+  width:90px;
+  height:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0 auto;
+
+
+}
+
+.gd{
+  width:90px;
+  height:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+
+
+}
+.gd img{
+  width:90px;
+  height:100px;
+  padding:10px;
+  margin:0 auto;
+}
+
+.pi{
+  width:90px;
+  height:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+
+
+}
+
+.pi img{
+  width:90px;
+  height:100px;
+  padding:10px;
+  margin:0 auto;
+}
+
+.event2 h4{
+  font-size:10px;
+  margin-top: -5px;
+}
+
+}
+@media screen and (min-width:576px) and (max-width: 767px) {
+
+.event1  img{
+  width:300px;
+  height:400px;
+  padding:15px;
+  margin:0 auto;
+}
+.event1{
+  width:300px;
+  height:400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0 auto;
+  margin-top:80px;
+
+}
+.event2{
+  width:400px;
+  height:390px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:80px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.event2 img{
+  width:400px;
+  height:250px;
+  padding:10px;
+  margin:0 auto;
+}
+
+.event3{
+  width:300px;
+  height:300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:50px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.event3 img{
+  width:300px;
+  height:300px;
+  padding:15px;
+  margin:0 auto;
+}
+.Events{
+  width:100%;
+  height:1400px;
+  margin-top:-70px;
+
+}
+.elayer{
+  height:1400px;
+}
+.Aptitude img{
+  width:100px;
+  height:100px;
+  padding:10px;
+  margin:0 auto;
+}
+.Aptitude{
+  width:100px;
+  height:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:0 auto;
+
+
+}
+
+.gd{
+  width:100px;
+  height:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+
+
+}
+.gd img{
+  width:100px;
+  height:100px;
+  padding:10px;
+  margin:0 auto;
+}
+
+.pi{
+  width:100px;
+  height:100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+
+
+}
+
+.pi img{
+  width:100px;
+  height:100px;
+  padding:10px;
+  margin:0 auto;
+}
+
+.event2 h4{
+  font-size:12px;
+  margin-top: -5px;
+}
+}
+
+footer{
+  background-color: #222;
+
+
+
+}
+
+footer section{
+  color:white;
+  font-family:Fira Sans;
+}
+
+
+#hours,#address{
+  line-height: 2;
+}
+
+#inside{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#testimonial p{
+  margin-top:15px;
+}
+
+footer #hours span:nth-child(1){
+  font-size:25px;
+}
+
+footer #address span:nth-child(1){
+  font-size:25px;
+}
+
+footer #address i{
+  color:white;
+  margin:20px 20px 20px 17px;
+}
+
+footer #address i:hover{
+  color:black;
+
+}
+@media screen and (min-width:992px){
+footer .row{
+  margin-top:-80px;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:991px){
+  #hours,#address{
+    margin-top:-150px;
+  }
+}
+@media screen and (min-width:1px) and (max-width:767px){
+  #address{
+    text-align:center;
+    margin-top:-100px;
+  }
+
+  #hours{
+    text-align:center;
+    margin-top:-150px;
+  }
+
+  footer section hr{
+    width:50%;
+  }
+}
+
+#madeby{
+  color:white;
+  background-color: black;
+  padding:10px;
+  font-family: Fira Sans;
+}
+
+#madeby a,span{
+  color:white;
+  text-decoration:none;
+  position:relative;
+  top:3px;
+}
+
+@media screen and (max-width:991px){
+  .features-box:nth-child(3){
+    margin-top:30px;
+  }
+}
+
+@media screen and (max-width:767px){
+  .features-box:nth-child(2){
+    margin-top:30px;
+  }
+}
+
+@media screen and (max-width:594px){
+  .col-xxs-12{
+    position:relative;
+    min-height:1px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+.my-navbar .navbar-toggle:hover{
+  color:black!important;
+}
+
+}
+
+
+@media screen and (max-width:767px){
+      #venue img{
+        margin-left:130px;
+      }
+}
+</style>
+
+
+</head>
+<body>
+
+
+
+
+
+</div>
+
+ <nav class="wow slideInDown my-navbar navbar navbar-inverse navbar-fixed-top" data-wow-delay=".5s">
+  <div class="container">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="position:relative;top:-5px;" href="#">SPC-DTU</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a style="font-family:Arsenal; padding-top:20px;position:relative; top:5px;" href="/">Home</a></li>
+        <li><a style="font-family:Arsenal; padding-top:20px;position:relative; top:5px;" href="/#event">Events</a></li>
+        <li><a style="font-family:Arsenal; padding-top:20px;position:relative; top:5px;" href="/branding">Branding</a></li>
+        <li><a style="font-family:Arsenal; padding-top:20px;position:relative; top:5px;" href="/#sponsors">Sponsors</a></li>
+        <li><a style="font-family:Arsenal; padding-top:20px;position:relative; top:5px;" href="/#faq">Faq</a></li>
+        <li><a style="font-family:Arsenal; padding-top:20px;position:relative; top:5px;" href="#contact">Contact Us</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Section - Home Start -->
+    <section id="home" class="topstrip display-table height-100 no-padding width-100 img-fluid "  style="background-image: url({% static 'wood.jpg'%});background-repeat:no-repeat; background-position: center;background-size:cover;">
+            <div class="display-table-cell vertical-align-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <p class="wow slideInDown letter-spacing-1 margin-3 no-margin-bottom no-margin-rl text-black xs-text-large text-extra-large ">
+                                Download the brouchure to get to know about our Branding Benefits!
+                            </p>
+
+                            <a href="spc.pdf" download class="wow slideInUp page-scroll btn btn-color-#6EED6A  sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl"><i class="fa fa-download" aria-hidden="true"></i> Brochure</a>
+
+
+                        </div>
+                        <!-- //.col-md-8 -->
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //.container -->
+            </div>
+            <!-- //.display-table-cell -->
+        </section>
+        <!-- //Section - Home End -->
+<!--
+<div class="container">
+ <div class="clock col-md-12 col-xs-12 "  style=" margin:3em; overflow:hidden; line-height:100000% "></div>
+ <div class="message"></div>
+
+ <script type="text/javascript">
+    var clock;
+
+    $(document).ready(function() {
+        var clock;
+
+        clock = $('.clock').FlipClock({
+            clockFace: 'DailyCounter',
+            autoStart: false,
+            callbacks: {
+                stop: function() {
+                    $('.message').html('The clock has stopped!')
+                }
+            }
+        });
+
+        clock.setTime(220880);
+        clock.setCountdown(true);
+        clock.start();
+
+    });
+</script>
+</div>
+
+<div class="container">
+  <h2>Percent Website Complete</h2>
+  <p>Keep checking the update on the percent of website complete!</p>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+      75%
+    </div>
+  </div>
+</div>
+-->
+
+<footer class="wow slideInUp footer" id="contact" style=" padding:1%; margin:0px; ">
+      <div class="container"  >
+        <div class="row" >
+          <section id="map" class="wow slideInLeft col-md-4 col-sm-12 remove-padding" data-wow-delay=".5s" >
+             <a href="https://www.google.com/maps/place/delhi/@30.6444563,104.0438002,17z/data=!4m5!3m4!1s0x0:0xfd72d126a06e0a88!8m2!3d30.643939!4d104.045346?hl=en-US" target="_blank">
+            <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.977963752883!2d77.11547651508528!3d28.750074882371564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01212a67c965%3A0x87d470ca1c30d1b0!2sDelhi+Technological+University!5e0!3m2!1sen!2sin!4v1513169578892" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div></a>
+
+
+
+
+
+          </section>
+           <div class="col-sm-1 col-md-1">
+           </div>
+           <section id="address" class="wow slideInDown col-md-3 col-sm-5 remove-padding" data-wow-delay=".5s" >
+            <div id="inside">
+            <span>Connect With Us</span><br>
+            <span><a href =""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                 <a href =""><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+                 <a href =""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></span><br>
+               </div>
+            <hr class="visible-xs">
+          </section>
+          <div class=" col-sm-1 col-md-1" style="padding:3%">
+           </div>
+          <section id="hours" class="wow slideInRight col-md-3 col-sm-5 remove-padding" data-wow-delay=".5s">
+            <div id="inside">
+            <span>Reach Us At</span><br>
+            <span>Delhi Technological University,</span><br>
+                        <span>Shahbad Daulatpur,</span><br>
+                        <span>Main Bawana Road,</span><br>
+                        <span>Delhi,110042</span><br>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i> spcdtuhr@gmail.com</span><br>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i> 8448343696</span>
+                      </div>
+                        <hr class="visible-xs">
+          </section>
+
+
+        </div>
+      </div>
+      <div class="text-center" style="color:white;font-family:Fira Sans;"">&copy; All Rights Reserved</div>
+    </footer>
+
+    <div id="madeby" class="text-center">
+      Designed & Developed by- <br> <a style="margin-left:5px" href="https://www.facebook.com/abhinav.rastogi.758"> Abhinav Rastogi |</a>  <a href="https://www.facebook.com/profile.php?id=100012863267146"> Ashish Gupta</a>
+    </div>
+
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+</body>
+</html>
